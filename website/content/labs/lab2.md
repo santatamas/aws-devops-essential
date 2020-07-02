@@ -9,7 +9,7 @@ weight: 3
 
 ```bash
 aws cloudformation create-stack --stack-name DevopsWorkshop-Env \
---template-body file://platform.template \
+--template-body https://tms-cicd-workshop.s3.eu-north-1.amazonaws.com/src/02-aws-devops-workshop-environment-setup.template \
 --capabilities CAPABILITY_IAM
 ```
 
