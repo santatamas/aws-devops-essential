@@ -13,38 +13,29 @@ See the diagram below for a depiction of the complete architecture.
 * **Configure AWS CodeCommit:** The easiest way to set up AWS CodeCommit is to configure HTTPS Git credentials for AWS CodeCommit. On the user details page in IAM console, choose the **Security Credentials** tab, and in **HTTPS Git credentials for AWS CodeCommit**, choose **Generate**. ![HTTPS Git Credential](./img/codecommit-iam-gc1.png)
         **💡 Note:** Make Note of the Git HTTP credentials handy. It will be used for cloning and pushing changes to Repo.
           Also, You can find detail instruction on how to configure HTTPS Git Credential [here](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html)
-* **IAM Permissions:** Finally, for the AWS account ensure you have sufficient privileges. You must have permissions for the following services:
+* **IAM Permissions:** Finally, for the AWS account ensure you have sufficient privileges. 
 
-AWS Identity and Access Management
+You must have permissions for the following services:
 
-Amazon Simple Storage Service
-
-AWS CodeCommit
-
-AWS CodeBuild
-
-AWS CloudFormation
-
-AWS CodeDeploy
-
-AWS CodePipeline
-
-AWS Cloud9
-
-Amazon EC2
-
-Amazon SNS
-
-Amazon CloudWatch Events
+* AWS Identity and Access Management
+* Amazon Simple Storage Service
+* AWS CodeCommit
+* AWS CodeBuild
+* AWS CloudFormation
+* AWS CodeDeploy
+* AWS CodePipeline
+* AWS Cloud9
+* Amazon EC2
+* Amazon SNS
+* Amazon CloudWatch Events
 
 ***
 
 ### **Important:**
 Preferred regions for lab
-- North Virginia US-EAST-1
-- Oregon US-WEST-2
+- Stockholm (eu-north-1)
 
-If you want to your region choice for the lab. Kindly the select the region which has all four Code* services and Cloud9 service. You can find the [region services list](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). Stick to the same region throughout all labs. 
+Stick to the same region throughout all labs. 
 **Make sure you have not reached the VPC or Internet Gateway limits for that region. If you already have 5 VPCs/IGWs, delete at least one before you proceed or choose an alternate region.** 
 
 # Labs

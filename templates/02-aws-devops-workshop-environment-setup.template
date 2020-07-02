@@ -18,6 +18,7 @@
       "eu-central-1": {"RANGE" : "10.42"},
       "eu-west-1": {"RANGE" : "10.42"},
       "eu-west-2": {"RANGE" : "10.43"},
+      "eu-north-1": {"RANGE" : "10.42"},
       "sa-east-1": {"RANGE" : "10.42"}
     },
 
@@ -30,15 +31,15 @@
     },
 
     "instancesTypes" : {
-      "Demo" : { "INST" : "t2.small" }
+      "Demo" : { "INST" : "t3.small" }
     },
 
     "AWSInstanceType2Virt": {
-      "t2.small": {"Virt": "HVM"}
+      "t3.small": {"Virt": "HVM"}
     },
 
     "AWSInstanceType2EBSOpt": {
-      "t2.small": {"EBSOpt": "false"}
+      "t3.small": {"EBSOpt": "false"}
     },
 
     "AWSRegionVirt2AMI": {
@@ -55,7 +56,8 @@
       "eu-central-1": {"HVM": "ami-c7ee5ca8"},
       "eu-west-1": {"HVM": "ami-acd005d5"},
       "eu-west-2": {"HVM": "ami-1a7f6d7e"},
-      "sa-east-1": {"HVM": "ami-f1344b9d"}
+      "sa-east-1": {"HVM": "ami-f1344b9d"},
+      "eu-north-1": {"HVM": "ami-0617772f98e9b9880"}
     }
   },
 
